@@ -3,6 +3,11 @@ import './css/MidPage.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import profilePic from './assets/jyo-linkedin.jfif';
+import Projects from "./Projects";
+import About from "./About";
+import Contact from "./Contact";
+
+
 
 export default function MidPage() {
 
@@ -15,191 +20,40 @@ export default function MidPage() {
             {/* profile */}
             <div className="profile">
                
-                <div className="info">
 
+                <section id ="home" className="info">
                     <div>
                         <h1 style={{color:"white"}}>Hi, I'm Ajjarapu Jyothi</h1>
                         <h2 style={{color:"white"}}>Frontend Developer</h2>
                     </div>
 
-                    <img
-                        src={profilePic}
-                        alt="profile"
-                        className="profile-pic"
-                    />
-                </div>
-
+                    <img src={profilePic} alt="profile" className="profile-pic" />
+                </section>
                 <br />
 
-                <div className="description">                   
-                    <p> 
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo
+                 <section id ="about" className="info">
+                    <div>
+                        <About />
+                    </div>
 
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo
+                </section>
+                <br />
 
+                <section id ="projects" className="info">
+                    <div>
+                        <Projects />
+                    </div>
 
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo
+                </section>
+                <br/>
 
+                <section id ="contact" className="info">
+                    <div>
+                        <Contact />
+                    </div>
 
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo
-
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo
-
-
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo
-
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justos
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justoLorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justos
-                    </p>
-
-
-                </div>               
-                
+                </section>
+                <br/>
 
             </div>
                 

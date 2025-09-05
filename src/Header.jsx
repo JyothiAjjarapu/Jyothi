@@ -11,9 +11,8 @@ export default function Header() {
                 <div className = "sections">
                     <a href="#home" className='section'>Home</a>
                     <a href="#about" className='section'>About</a>
-                    <a href="#contact" className='section'>Contact</a>
-                    <a href="#blog" className='section'>Blog</a>
                     <a href="#projects" className='section'>Projects</a>
+                    <a href="#contact" className='section'>Contact</a>
                 </div>
 
            </div>
