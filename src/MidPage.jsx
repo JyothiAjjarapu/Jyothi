@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import './css/MidPage.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
@@ -11,8 +11,16 @@ import Contact from "./Contact";
 
 export default function MidPage() {
 
-    const [likes, setLikes] = useState(0);
+    // const [likes, setLikes] = useState(0);
     // const [dislikes, setDislikes] = useState(0);
+
+    const [likes, setLikes] = useState(() => {
+    return parseInt(localStorage.getItem("likes") || "0");
+    });
+
+    useEffect(() => {
+    localStorage.setItem("likes", likes);
+    }, [likes]);
 
     return (
        <div className="mid-page" >
