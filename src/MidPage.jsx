@@ -1,71 +1,60 @@
-import {useState, useEffect} from "react";
-import './css/MidPage.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import profilePic from './assets/jyo-linkedin.jfif';
+// import {useState, useEffect} from "react";
+// import './css/MidPage.css'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faHeart } from "@fortawesome/free-solid-svg-icons";
+
+import './css/Mainpage.css';
+import "./css/RotatingIcons.css";
+import profilePic from './assets/images/jyo-linkedin.jfif';
 import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 
 
+export default function MidPage() 
+{
+    // const [likes, setLikes] = useState(() => {
+    // return parseInt(localStorage.getItem("likes") || "0");
+    // });
 
-export default function MidPage() {
-
-    // const [likes, setLikes] = useState(0);
-    // const [dislikes, setDislikes] = useState(0);
-
-    const [likes, setLikes] = useState(() => {
-    return parseInt(localStorage.getItem("likes") || "0");
-    });
-
-    useEffect(() => {
-    localStorage.setItem("likes", likes);
-    }, [likes]);
+    // useEffect(() => {
+    // localStorage.setItem("likes", likes);
+    // }, [likes]);
 
     return (
-       <div className="mid-page" >
-        
-            {/* profile */}
+       <div className="main-page" >
             <div className="profile">
-               
 
-                <section id ="home" className="info">
-                    <div>
-                        <h1 style={{color:"white"}}>Hi, I'm Ajjarapu Jyothi</h1>
-                        <h2 style={{color:"white"}}>Frontend Developer</h2>
+                <div id ="home" className="intro">
+
+                    <div className="info">
+
+                        <h2 style={{color: "rgb(172, 1, 78)"}}>
+                            Hi, I'm Ajjarapu Jyothi 👋
+                        </h2>
+
+                        <h1 style={{color:"white"}}>Full Stack Developer</h1>
+
+                        <p style = {{color:"white" ,display: 'flex', flexWrap:'wrap'}}> 
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, sequi?
+                        </p>
+
+                        <button className="btn" style={{backgroundColor: "transparent", border:"1px solid grey"}}>  View my work </button>
+                        {"  "}
+                        <button className="btn">  Download Resume </button> 
+                       
                     </div>
 
-                    <img src={profilePic} alt="profile" className="profile-pic" />
-                </section>
-                <br />
+                    <img src={profilePic} />
+                </div>
 
-                 <section id ="about" className="info">
-                    <div>
-                        <About />
-                    </div>
+                <div className="about-skills">
 
-                </section>
-                <br />
-
-                <section id ="projects" className="info">
-                    <div>
-                        <Projects />
-                    </div>
-
-                </section>
-                <br/>
-
-                <section id ="contact" className="info">
-                    <div>
-                        <Contact />
-                    </div>
-
-                </section>
-                <br/>
+                </div>
 
             </div>
                 
-            {/* likes */}            
+            {/* likes            
             <div className="like" style={{display:"flex", gap:"10px", marginLeft: "20px"}}> 
 
                 <button onClick={() => setLikes((likes) => likes + 1)}
@@ -79,7 +68,7 @@ export default function MidPage() {
                  <div style={{fontSize: "20px"}}> 
                     {likes >=0 && likes} 
                 </div>
-                
+                 */}
                 
                 {/* {" "}
                 
@@ -98,7 +87,7 @@ export default function MidPage() {
                
 
                 {/* setCount((count) => (count > 0 ? count - 1 : 0)) */}
-            </div>
+            {/* </div> */}
         
         </div>
     )

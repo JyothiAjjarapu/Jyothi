@@ -1,6 +1,6 @@
 import ProjectsCard from "./ProjectsCard";
 import "./css/projects.css";
-import profilePic from './assets/jyo-linkedin.jfif';
+import profilePic from './assets/images/jyo-linkedin.jfif';
 
 export default function Projects() {
     return (

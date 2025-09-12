@@ -1,0 +1,36 @@
+.main-page
+{
+    margin:0px;
+    padding: 10px;
+}
+
+.intro
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin:5px 0 10px 0;
+}
+
+.intro img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 5px solid  rgb(172, 1, 78);
+}
+
+.btn
+{
+    background-color: rgb(172, 1, 78);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}

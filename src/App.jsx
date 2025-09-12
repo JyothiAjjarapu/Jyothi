@@ -1,4 +1,4 @@
-import MidPage from './midPage'
+import MidPage from './MidPage'
 import Footer from './footer'
 import Header from './Header'
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
       <MidPage />   
-      <Footer />
+      <Footer /> 
     </>
   )
 }

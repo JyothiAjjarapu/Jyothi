@@ -1,104 +1,53 @@
+
 .footer
 {
-    padding: 13px;
-    justify-content: left;
-    font-size: 14px;
-    background-color: #2C3E50;
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-
     position: fixed;
     bottom: 0;
-    left: 10;
+    left: 10px;
     width: 100%;
-    z-index: 1000;
-    box-sizing: border-box;
-  
-}
-
-.header
-{
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #2C3E50;
-    font-size: 20px;
+    height: 90px;
+    margin: 10px 0px 20px 0px;
+    border-top: 1px solid white;
+    
     display: flex;
-    justify-content: space-between;
-    align-items: center;   
-    border-radius: 5px;
-    color: #FFFFFF;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap: 20px;   
+   
+}
+.footer-text
+{
+    color: white;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
     
     position: fixed;
-    top: 0;
-    left: 10;
+    bottom: 0;
+    left: 10px;
     width: 100%;
-    box-sizing: border-box;
 }
-
-
-.header.dark 
+.quicklinks
 {
-  background: #2c3e50;
-  color: white;
-}
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+    padding-right: 20px;
 
-.sections 
-{
     display: flex;
-    gap: 20px;
-    padding: 10px;
-    justify-content: flex-end;
-    color:#FFFFFF
+    flex-direction:column;
+    width: 15%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 1px;
 }
-
-.sections a 
+.quicklinks a
 {
-    color: #FFFFFF;          
+    color: white;
     text-decoration: none;    
-    transition: color 0.3s;   
 }
-
-.sections a:hover 
+.quicklinks a:hover
 {
-    color: #FFD700;         
-}
-
-.icon 
-{ 
-    border-radius: 4px; 
-    padding: 5px; 
-    width: 28px; 
-}
-
-.icon-circle 
-{
-  width: 60px;                  
-  height: 60px;                 
-  border-radius: 50%;           
-  background-color: transparent;    
-  color: white;                 
-  display: flex;                
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;             
-  font-weight: bold;
-  border-color: #FFFFFF;
-  box-shadow: 0 0 15px rgba(249, 248, 248, 0.2);
-  margin-left: 20px;
-  
-  animation: pulse 2s infinite;
-  transition: transform 0.3s ease;
-}
-
-.icon-circle:hover 
-{
-  transform: scale(1.2);       
-}
-
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+    color: rgb(172, 1, 78);
 }
