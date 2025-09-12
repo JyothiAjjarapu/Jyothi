@@ -49,6 +49,27 @@ export default function MidPage()
                 </div>
 
                 <div className="about-skills">
+                    <div>
+                        <h1> About Me </h1>
+                        <div className="about">
+                            <p> 
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, ut.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, at!
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div>
+                        <h1> Skills </h1>
+                        <div className="skills">
+                            <button className="btn-skill"> HTML </button>
+                            <button className="btn-skill"> CSS </button>
+                            <button className="btn-skill"> JavaScript </button> 
+                        </div>
+                       
+                    </div>
 
                 </div>
 
