@@ -1,4 +1,4 @@
-
+import "./css/contact.css";
 import { useForm, ValidationError } from '@formspree/react';
 
 
@@ -11,27 +11,34 @@ export default function Contact() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
 
-            <label htmlFor="name">Name</label>
-            <input id="name" type="text" name="name" />
-            <ValidationError prefix="Name" field="name" errors={state.errors} />
-            <br />  
+        <div className="contact">
+            <h3 style={{textAlign:"center"}}> Contact Me </h3>
 
-            <label htmlFor="email">Email Address</label>
-            <input id="email" type="email" name="email" />
-            <ValidationError prefix="Email" field="email" errors={state.errors} />
-            <br />
+            <form onSubmit={handleSubmit}>
 
-            <label>Message</label>
-            <textarea id="message" name="message" /> {" "}
-            <ValidationError prefix="Message" field="message" errors={state.errors} />
-            <br />
+                <div className="fields">
+                    
+                    <input id="name" type="text" name="name" placeholder="Name" />
+                    <ValidationError prefix="Name" field="name" errors={state.errors} />
+                </div>
+                
+                <div className="fields">
+                    
+                    <input id="email" type="email" name="email" placeholder="Email Address" />
+                    <ValidationError prefix="Email" field="email" errors={state.errors} />
+                </div>
+               
+                <div className="fields">
+                    <textarea id="message" name="message" placeholder="Your message here"/> {" "}
+                    <ValidationError prefix="Message" field="message" errors={state.errors} />
+                </div>
+                
+                <button type="submit" disabled={state.submitting}>
+                    Submit
+                </button>
 
-            <button type="submit" disabled={state.submitting}>
-                Submit
-            </button>
-        </form>
-
+            </form>
+        </div>      
     );
 }

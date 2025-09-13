@@ -1,31 +1,19 @@
-// import {useState, useEffect} from "react";
-// import './css/MidPage.css'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 import './css/Mainpage.css';
-import "./css/RotatingIcons.css";
 import profilePic from './assets/images/jyo-linkedin.jfif';
-import Projects from "./Projects";
-import About from "./About";
-import Contact from "./Contact";
 
+import Projects from "./Projects";
+import Experience from "./Experience";
+import Contact from "./Contact";
 
 export default function MidPage() 
 {
-    // const [likes, setLikes] = useState(() => {
-    // return parseInt(localStorage.getItem("likes") || "0");
-    // });
-
-    // useEffect(() => {
-    // localStorage.setItem("likes", likes);
-    // }, [likes]);
-
+    
     return (
        <div className="main-page" >
             <div className="profile">
 
-                <div id ="home" className="intro">
+                <div className="intro" section id="home">
 
                     <div className="info">
 
@@ -37,6 +25,7 @@ export default function MidPage()
 
                         <p style = {{color:"white" ,display: 'flex', flexWrap:'wrap'}}> 
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, sequi?
+                            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, vel? */}
                         </p>
 
                         <button className="btn" style={{backgroundColor: "transparent", border:"1px solid grey"}}>  View my work </button>
@@ -48,11 +37,14 @@ export default function MidPage()
                     <img src={profilePic} />
                 </div>
 
-                <div className="about-skills">
+                <div className="about-skills" section id="about">
                     <div>
-                        <h1> About Me </h1>
+                         <h1 style={{textAlign:"center"}}> About Me </h1>
+                         <br />
                         <div className="about">
+                           
                             <p> 
+                                
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, ut.
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit.
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, at!
@@ -62,54 +54,52 @@ export default function MidPage()
                     </div>
 
                     <div>
-                        <h1> Skills </h1>
+                        <h1 style={{textAlign:"center"}}> Skills </h1>
+                            <br />
                         <div className="skills">
+                            
                             <button className="btn-skill"> HTML </button>
                             <button className="btn-skill"> CSS </button>
-                            <button className="btn-skill"> JavaScript </button> 
+                            <button className="btn-skill"> JavaScript </button>
+                            <button className="btn-skill"> React </button> 
+                            <button className="btn-skill"> Node JS </button>
+                            <button className="btn-skill"> Mongo DB </button>
+                            <button className="btn-skill"> Express JS </button>
+                            <button className="btn-skill"> Java </button>
+                            <button className="btn-skill"> Python </button>
+                            <button className="btn-skill"> SQL </button>
+                            <button className="btn-skill"> php </button>
+                            <button className="btn-skill"> ML </button>
+                            <button className="btn-skill"> DataScience </button>
+                            <button className="btn-skill"> DevOps </button>
+                            <button className="btn-skill"> AWS  </button>
+                            <button className="btn-skill"> Kubernetes </button>
+                            <button className="btn-skill"> Jenkins </button>
+                            <button className="btn-skill">  </button>
+                            <button className="btn-skill">  </button> 
+                            <button className="btn-skill">  </button>
+                            <button className="btn-skill">  </button>
                         </div>
                        
                     </div>
 
                 </div>
 
-            </div>
-                
-            {/* likes            
-            <div className="like" style={{display:"flex", gap:"10px", marginLeft: "20px"}}> 
-
-                <button onClick={() => setLikes((likes) => likes + 1)}
-                    style={{
-                        background: "transparent",
-                        border: "none",
-                        cursor: "pointer"
-                        }}>
-                    <FontAwesomeIcon icon={faHeart} style={{ color: "#e70862", fontSize: "24px"}} />
-                </button>
-                 <div style={{fontSize: "20px"}}> 
-                    {likes >=0 && likes} 
+                <div section id="projects">
+                    <Projects />
                 </div>
-                 */}
-                
-                {/* {" "}
-                
-                <button onClick={()=>{setDislikes( (dislikes) => dislikes + 1 )}} 
-                    style={{
-                        background: "transparent",
-                        border: "none",
-                        cursor: "pointer"
-                        }}> 
-                    <FontAwesomeIcon icon={faHeartBroken} style={{color: "#fb0952",  fontSize: "24px" }} />
-                </button>
-                 <div style={{fontSize: "20px"}}> 
-                    {dislikes >=0 && dislikes} 
-                </div> */}
 
-               
+                <div className="experience-contact">
 
-                {/* setCount((count) => (count > 0 ? count - 1 : 0)) */}
-            {/* </div> */}
-        
+                    <div section id="experience">
+                        <Experience />
+                    </div>
+                    <div section id="contact">
+                        <Contact />
+                    </div>
+                </div>
+                
+            </div>
         </div>
     )
 }
