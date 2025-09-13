@@ -11,10 +11,12 @@
     flex-wrap: wrap;
 
     color: white;
-    height:fit-content;
+    /* height:fit-content;
     box-sizing: content-box;
-    min-width: fit-content;
-    width: 400px;
+    min-width: fit-content; */
+    /* width: 400px; */
+
+    
 
 }
 

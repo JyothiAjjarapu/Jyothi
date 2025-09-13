@@ -5,6 +5,7 @@ import profilePic from './assets/images/jyo-linkedin.jfif';
 import Projects from "./Projects";
 import Experience from "./Experience";
 import Contact from "./Contact";
+import Education from "./Education";
 
 export default function MidPage() 
 {
@@ -75,10 +76,10 @@ export default function MidPage()
                             <button className="btn-skill"> AWS  </button>
                             <button className="btn-skill"> Kubernetes </button>
                             <button className="btn-skill"> Jenkins </button>
-                            <button className="btn-skill">  </button>
+                            {/* <button className="btn-skill">  </button>
                             <button className="btn-skill">  </button> 
                             <button className="btn-skill">  </button>
-                            <button className="btn-skill">  </button>
+                            <button className="btn-skill">  </button> */}
                         </div>
                        
                     </div>
@@ -91,7 +92,11 @@ export default function MidPage()
 
                 <div className="experience-contact">
 
-                    <div section id="experience">
+                    <div section id="Education">
+                        <Education />
+                    </div>
+
+                    <div section id="experience">                        
                         <Experience />
                     </div>
                     <div section id="contact">
