@@ -9,10 +9,12 @@ header
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 0 2px 4px #0000001a;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 50px;
+    flex-wrap: wrap;
 
 }
 
@@ -43,4 +45,45 @@ header
 {
     border-bottom: 2px solid rgb(172, 1, 78);
     color: rgb(172, 1, 78);
+}
+
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  margin-right: 10px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 768px) {
+  .sections {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #0B0829;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .sections.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }

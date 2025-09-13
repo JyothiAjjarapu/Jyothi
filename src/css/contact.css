@@ -30,6 +30,7 @@
     gap: 10px;
 
 }
+
 .contact input, .contact textarea
 {
     width: 300px;
@@ -53,6 +54,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+    
 }
 .contact h2
 {

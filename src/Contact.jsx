@@ -35,9 +35,13 @@ export default function Contact() {
                     <ValidationError prefix="Message" field="message" errors={state.errors} />
                 </div>
                 
-                <button type="submit" disabled={state.submitting}>
-                    Submit
-                </button>
+                <div className="end-icons">
+                    <div>
+                        <button type="submit" disabled={state.submitting}>
+                            Submit
+                        </button>
+                    </div>                    
+                </div>                            
 
             </form>
         </div>      
