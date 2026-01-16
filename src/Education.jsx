@@ -4,21 +4,15 @@ import Timeline from './Timeline.jsx';
 const education = [
     {
         role: "M.Tech in Computer Science",
-        company: "XYZ University",
-        date: "2018 – 2022",
-        responsibilities: [ "Led a team of developers",
-                "Implemented new features",
-                "Optimized website performance",
-            ]
+        company: "Indian Institute of Technology Jodhpur",
+        date: "2022 – 2024",
+        responsibilities: []
     },
     {
-        role: "B.Tech in Computer Science",
-        company: "XYZ University",
-        date: "2018 – 2022",
-        responsibilities: [ "Led a team of developers",
-                "Implemented new features",
-                "Optimized website performance",
-            ]
+        role: "B.Tech in Information Technology",
+        company: "Osmania University",
+        date: "2016 – 2020",
+        responsibilities: []
     }
 ];
     export default function Education()

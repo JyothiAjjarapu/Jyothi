@@ -25,8 +25,7 @@ export default function MidPage()
                         <h1 style={{color:"white"}}>Full Stack Developer</h1>
 
                         <p style = {{color:"white" ,display: 'flex', flexWrap:'wrap'}}> 
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, sequi?
-                            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, vel? */}
+                           front-end focused full stack developer with experience in building web applications using Java, React, SQL, and Docker.
                         </p>
 
                         <button className="btn" style={{backgroundColor: "transparent", border:"1px solid grey"}}>  View my work </button>
@@ -45,10 +44,14 @@ export default function MidPage()
                         <div className="about">
                            
                             <p> 
-                                
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, ut.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, at!
+                            
+                               I’m a Full Stack Developer with hands-on experience building web applications using Java, React, SQL and Docker, and working in Linux-based and cloud-connected environments. 
+                               My background includes developing user-facing interfaces, backend services and containerized deployments, with a strong focus on writing clean, maintainable code and understanding how systems work end to end.
+                              <br /> <br />
+                               I hold an M.Tech in Computer Science from IIT Jodhpur, where I ranked 1st in my program, and have worked on projects ranging from healthcare systems and multi-container applications to security-focused backend development. 
+                               I recently moved to Germany and am currently strengthening my German while staying technically active through projects and continuous learning.
+                               I’m interested in junior to mid-level roles in backend or full stack development where I can contribute reliably, learn from experienced teams and grow further in a product-focused environment.
+                            
                             </p>
                         </div>
                         
@@ -76,10 +79,7 @@ export default function MidPage()
                             <button className="btn-skill"> AWS  </button>
                             <button className="btn-skill"> Kubernetes </button>
                             <button className="btn-skill"> Jenkins </button>
-                            {/* <button className="btn-skill">  </button>
-                            <button className="btn-skill">  </button> 
-                            <button className="btn-skill">  </button>
-                            <button className="btn-skill">  </button> */}
+                           
                         </div>
                        
                     </div>

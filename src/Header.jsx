@@ -13,13 +13,6 @@ export default function Header() {
 
                 <h1 className = "icon-circle" >AJ</h1>
 
-                 {/* Hamburger Icon */}
-                <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
                 <div className={`sections ${isOpen ? "open" : ""}`}>
                     <a href="#home" onClick={handleLinkClick}>Home</a>
                     <a href="#about" onClick={handleLinkClick}>About</a>

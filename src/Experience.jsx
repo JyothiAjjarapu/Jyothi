@@ -6,22 +6,23 @@ export default function Experience()
 
     const experiences = [
         {
-            role: "Senior Frontend Developer",
-            company: "Tech Company",
-            date: "2022 – Present",
+            role: "Full Stack Developer",
+            company: "Oculon.ai",
+            date: "July 2024 - Feb 2025",
             responsibilities: [
-                "Led a team of developers",
-                "Implemented new features",
-                "Optimized website performance",
+                "Scalable React Applications",
+                "Dynamic Data Dashboards",
+                "Cross-Team Collaboration"
             ],
         },
         {
-            role: "Frontend Developer",
-            company: "Web Agency",
-            date: "2020 – 2022",
+            role: "Application Development Associate",
+            company: "Accenture Solutions",
+            date: "Dec. 2020 - May 2021",
             responsibilities: [
-                "Built responsive web apps",
-                "Worked closely with designers",
+              "Linux System Administration",
+              "Dockerized Deployments Management",
+              "CI/CD Pipeline Support"
             ],
         },
     ];
