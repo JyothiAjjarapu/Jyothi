@@ -1,5 +1,5 @@
 import MidPage from './MidPage'
-import Footer from './footer'
+import Footer from './Footer'
 import Header from './Header'
 import { Routes, Route } from "react-router-dom";
 import Hobbies from "./Hobbies";
