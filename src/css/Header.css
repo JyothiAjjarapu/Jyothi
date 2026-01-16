@@ -49,23 +49,6 @@ header
 }
 
 
-/* Hamburger hidden by default */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 4px;
-  margin-right: 10px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  border-radius: 3px;
-}
-
-/* 📱 Mobile styles */
 @media (max-width: 768px) {
   .sections {
     display: none;

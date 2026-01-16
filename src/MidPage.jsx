@@ -39,7 +39,11 @@ export default function MidPage()
                             My Hobbies 
                         </button>
                         {"  "}
-                        <button className="btn">  Download Resume </button> 
+                        {/* <button className="btn">  Download Resume </button>  */}
+
+                        <a href="/Resume.pdf" download>
+                            <button className="btn">Download Resume</button>
+                        </a>
                        
                     </div>
 
