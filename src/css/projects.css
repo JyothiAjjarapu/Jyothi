@@ -1,61 +1,82 @@
-.projects-section
-{
-    /* border: 1px solid white; */
+
+.section-title {
+    color: white;
+    font-size: 22px;
+    margin-left: 25px;
+}
+
+/* Make projects section horizontally scrollable */
+.projects-section {
     padding: 20px;
-    gap: 20px;
-
-    align-items: center;
-    justify-content: space-around;
-
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr)); */
-
     display: flex;
-    flex-wrap: wrap;
-
+    flex-wrap: nowrap;              /* prevent wrapping */
+    gap: 20px;
+    overflow-x: auto;               /* enable horizontal scroll */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
-.project-card
-{
+/* Optional: nicer scrollbar (Chrome/Edge/Safari) */
+.projects-section::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects-section::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.projects-section::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.projects-section::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* Project card – fixed width so horizontal scroll works properly */
+.project-card {
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px;
     color: white;
 
-    width: 200px;
-    height: 700px;
-    box-sizing: border-box;
-    display:flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items:flex-start;
+    min-width: 260px;               /* important for scrolling */
+    max-width: 260px;
+    height: 610px;
 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;                 /* prevents shrinking */
 }
 
-.project-card img
-{
-    width: 100%;;
+/* Image styling */
+.project-card img {
+    width: 100%;
     height: 80px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.project-card p
-{
-    margin: 10px 0 10px 0;
+/* Description text */
+.project-card p {
+    margin: 10px 0;
     font-size: 12px;
     line-height: 1.4;
 }
-.project-card h2
-{
+
+/* Title */
+.project-card h2 {
     width: 100%;
     text-align: center;
 }
 
-.project-card .button
-{
-    background-color:transparent;
+/* Tech stack buttons */
+.project-card .button {
+    background-color: transparent;
     color: white;
     border: 1px solid lightgrey;
     padding: 5px 10px;
@@ -64,9 +85,8 @@
     font-size: 12px;
     text-align: center;
 }
-.project-card .techstack-buttons 
-{
-  
+
+.project-card .techstack-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;

@@ -5,8 +5,13 @@ import "./css/projects.css";
 export default function Projects() 
 {
     return (
-        <div className="projects-section">           
-                
+
+        <>
+
+        <h2 className="section-title">Projects</h2>
+        <br/>
+         <div className="projects-section"> 
+           
             <ProjectsCard                 
                 title = {"Rakshak - A Remote Healthcare Monitoring System"}
                 // image = {profilePic}
@@ -62,6 +67,9 @@ export default function Projects()
           
 
         </div>
+
+        </>
+       
         
     )
 }

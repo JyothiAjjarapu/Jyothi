@@ -1,6 +1,8 @@
 import MidPage from './MidPage'
 import Footer from './footer'
 import Header from './Header'
+import { Routes, Route } from "react-router-dom";
+import Hobbies from "./Hobbies";
 
 import './css/App.css'
 
@@ -9,9 +11,13 @@ function App() {
 
   return (   
     <>
-      <Header />
-      <MidPage />   
-      <Footer /> 
+      
+      <Routes>
+        <Route path="/home" element={<Header />} />
+        <Route path="/" element={<MidPage />} />
+        <Route path="/hobbies" element={<Hobbies />} />
+      </Routes> 
+      <Footer />
     </>
   )
 }

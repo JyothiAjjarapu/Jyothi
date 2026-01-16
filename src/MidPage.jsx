@@ -7,9 +7,12 @@ import Experience from "./Experience";
 import Contact from "./Contact";
 import Education from "./Education";
 
+import { useNavigate } from "react-router-dom";
+
 export default function MidPage() 
 {
-    
+    const navigate = useNavigate();
+
     return (
        <div className="main-page" >
             <div className="profile">
@@ -28,7 +31,13 @@ export default function MidPage()
                            front-end focused full stack developer with experience in building web applications using Java, React, SQL, and Docker.
                         </p>
 
-                        <button className="btn" style={{backgroundColor: "transparent", border:"1px solid grey"}}>  View my work </button>
+                        <button 
+                            className="btn" 
+                            style={{backgroundColor: "transparent", border:"1px solid grey"}}
+                            onClick={() => navigate("/hobbies")}
+                        >  
+                            My Hobbies 
+                        </button>
                         {"  "}
                         <button className="btn">  Download Resume </button> 
                        
@@ -48,7 +57,7 @@ export default function MidPage()
                                I’m a Full Stack Developer with hands-on experience building web applications using Java, React, SQL and Docker, and working in Linux-based and cloud-connected environments. 
                                My background includes developing user-facing interfaces, backend services and containerized deployments, with a strong focus on writing clean, maintainable code and understanding how systems work end to end.
                               <br /> <br />
-                               I hold an M.Tech in Computer Science from IIT Jodhpur, where I ranked 1st in my program, and have worked on projects ranging from healthcare systems and multi-container applications to security-focused backend development. 
+                               I hold Masters degree in Computer Science from IIT Jodhpur, where I ranked 1st in my program, and have worked on projects ranging from healthcare systems and multi-container applications to security-focused backend development. 
                                I recently moved to Germany and am currently strengthening my German while staying technically active through projects and continuous learning.
                                I’m interested in junior to mid-level roles in backend or full stack development where I can contribute reliably, learn from experienced teams and grow further in a product-focused environment.
                             
@@ -87,6 +96,7 @@ export default function MidPage()
                 </div>
 
                 <div section id="projects">
+                    
                     <Projects />
                 </div>
 
