@@ -64,8 +64,6 @@ export default function Projects()
                 techstack={["Machine Learning", "OpenCV", "Image processing", "SVM", "python"]}
             />
 
-          
-
         </div>
 
         </>
