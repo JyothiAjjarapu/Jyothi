@@ -1,6 +1,28 @@
+/* CSS Variables for theming */
+body {
+  --bg-color: #0B0829;
+  --text-color: #ffffff;
+  --accent-color: #ff5722;
+  --hover-color: #ff5722;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #880e4f;
+  --hover-color: #880e4f;
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #b0b0b0;
+  --hover-color: #b0b0b0;
+}
+
 .hobbies-container {
   padding: 24px;
-  color: white;
+  color: var(--text-color);
 }
 
 .hobbies-header {
@@ -25,7 +47,7 @@
 .gallery-item {
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .gallery-item img {
@@ -38,4 +60,5 @@
 
 .gallery-item:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

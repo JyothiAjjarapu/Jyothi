@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./css/Hobbies.css";
+import { useTheme } from './contexts/ThemeContext';
 
 import sketch1 from "./assets/images/sketches/1.jpeg";
 import sketch2 from "./assets/images/sketches/2.jpeg";
@@ -41,6 +42,8 @@ export default function Hobbies() {
 
 const sketches = [sketch1, sketch2, sketch3, sketch4, sketch5, sketch6, sketch7, sketch8, sketch9, sketch10, sketch11, sketch12, sketch13, sketch14, sketch15, sketch16, sketch17, sketch18, sketch19, sketch20, sketch21, sketch22, sketch23, sketch24];
 const claymodels = [claymodel1, claymodel2, claymodel3, claymodel4, claymodel5, claymodel6, claymodel7, claymodel8];
+const { theme } = useTheme();
+const textColor = theme === 'light' ? '#000000' : '#ffffff';
 
     return (
         <div className="hobbies-container">
@@ -48,12 +51,12 @@ const claymodels = [claymodel1, claymodel2, claymodel3, claymodel4, claymodel5, 
             <header className="hobbies-header">
                 <h1>Welcome to my Gallery</h1>
                 <nav>
-                    <Link to="/" style={{color: "white"}} >Back to Home</Link>
+                    <Link to="/" style={{color: textColor}} >Back to Home</Link>
                 </nav>
             </header>
 
             <section>
-                <p style={{textAlign: "center", fontSize: "20px", color: "white", fontFamily: "Arial, sans-serif", fontStyle: "italic"}}>
+                <p style={{textAlign: "center", fontSize: "20px", color: textColor, fontFamily: "Arial, sans-serif", fontStyle: "italic"}}>
                     Hi there! Now that you have seen my professional work, I invite you to explore my personal artistic side.
                     I learnt classical music for many years and enjoy singing Indian music in my free time. I can speak Telugu, Hindi, English, Tamil and German.
                     So I can sing songs in multiple languages. 

@@ -1,9 +1,11 @@
 import './css/Header.css';
 import { useState } from "react";
+import { useTheme } from './contexts/ThemeContext';
 
 export default function Header() {
 
     const [isOpen, setIsOpen] = useState(false);
+    const { theme, toggleTheme } = useTheme();
     const handleLinkClick = () => {
     setIsOpen(false); // auto close menu on link click
   };
@@ -12,6 +14,10 @@ export default function Header() {
            <header>
 
                 <h1 className = "icon-circle" >AJ</h1>
+
+                <button onClick={toggleTheme} className="theme-toggle">
+                  {theme === 'light' ? '🌙' : '☀️'}
+                </button>
 
                 <div className={`sections ${isOpen ? "open" : ""}`}>
                     <a href="#home" onClick={handleLinkClick}>Home</a>

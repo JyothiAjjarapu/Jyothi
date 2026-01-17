@@ -1,3 +1,28 @@
+/* CSS Variables for theming */
+body {
+  --bg-color: #0B0829;
+  --text-color: #ffffff;
+  --accent-color: #ff5722;
+  --hover-color: #ff5722;
+  --secondary-text: #ccc;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #880e4f;
+  --hover-color: #880e4f;
+  --secondary-text: #ccc;
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #b0b0b0;
+  --hover-color: #b0b0b0;
+  --secondary-text: #666;
+}
+
 .timeline 
 {
   position: relative;
@@ -18,7 +43,7 @@
   top: 5px;
   width: 14px;
   height: 14px;
-  background-color:  rgb(124, 29, 75);
+  background-color: #888;
   border-radius: 50%;
 }
 
@@ -31,21 +56,23 @@
 {
   margin: 0;
   font-weight: bold;
+  color: var(--text-color);
 }
 
 .timeline-content .company 
 {
   font-style: italic;
-  color: #ccc;
+  color: var(--secondary-text);
 }
 
 .timeline-content .date 
 {
   font-size: 0.9em;
-  color: #aaa;
+  color: var(--secondary-text);
 }
 
 .timeline-content .description
 {
   margin: 0 0 0 15px;
+  color: var(--text-color);
 }

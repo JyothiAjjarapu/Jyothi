@@ -1,3 +1,24 @@
+/* CSS Variables for theming */
+body {
+  --bg-color: #0B0829;
+  --text-color: #ffffff;
+  --accent-color: #ff5722;
+  --hover-color: #ff5722;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #880e4f;
+  --hover-color: #880e4f;
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #b0b0b0;
+  --hover-color: #b0b0b0;
+}
 
 .footer
 {
@@ -7,7 +28,7 @@
     width: 100%;
     height: auto;
     margin: 5px 0px 5px 0px;
-    border-top: 1px solid white;
+    border-top: 1px solid var(--text-color);
     
     display: flex;
     justify-content:space-between;
@@ -20,7 +41,7 @@
     margin: 10px;
     font-size: 14px;
     padding-right: 20px;
-    color: white;
+    color: var(--text-color);
 
     display: flex;
     flex-direction:row;
@@ -32,17 +53,17 @@
 }
 .quicklinks a
 {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;    
 }
 .quicklinks a:hover
 {
-    color: rgb(172, 1, 78);
+    color: var(--accent-color);
 }
 
 .footer-text
 {
-    color: white;
+    color: var(--text-color);
     text-align: right;
     margin-top: 5px;
     font-size: 14px;

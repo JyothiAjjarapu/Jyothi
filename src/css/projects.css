@@ -1,6 +1,27 @@
+/* CSS Variables for theming */
+body {
+  --bg-color: #0B0829;
+  --text-color: #ffffff;
+  --accent-color: #ff5722;
+  --hover-color: #ff5722;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #880e4f;
+  --hover-color: #880e4f;
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #b0b0b0;
+  --hover-color: #b0b0b0;
+}
 
 .section-title {
-    color: white;
+    color: var(--text-color);
     font-size: 22px;
     margin-left: 25px;
 }
@@ -40,17 +61,21 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
-    color: white;
-
+    color: var(--text-color);
     min-width: 260px;               
     max-width: 260px;
     height: 610px;
-
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-shrink: 0;                
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Image styling */
@@ -76,9 +101,9 @@
 
 
 .project-card .button {
-    background-color: transparent;
-    color: white;
-    border: 1px solid lightgrey;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
     padding: 5px 10px;
     margin: 2px;
     border-radius: 5px;

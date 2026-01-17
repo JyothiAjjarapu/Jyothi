@@ -11,9 +11,8 @@ function App() {
 
   return (   
     <>
-      
+      <Header />
       <Routes>
-        <Route path="/home" element={<Header />} />
         <Route path="/" element={<MidPage />} />
         <Route path="/hobbies" element={<Hobbies />} />
       </Routes> 
