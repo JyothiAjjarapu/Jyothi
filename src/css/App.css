@@ -32,11 +32,9 @@ body.light {
   100% { background-position: 0% 50%; }
 }
 
-/* Light theme animated background */
+/* Light theme static gradient background */
 body.light {
-  background: linear-gradient(-45deg, #f5f7fa, #c3cfe2, #e1e5e9, #b0c4de);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  background: linear-gradient(-45deg, #ccd1d9, #dce1e8, #e1e5e9, #d7dfe8);
 }
 
 /* Dark theme animated background */

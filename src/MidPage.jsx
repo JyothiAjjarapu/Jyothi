@@ -18,7 +18,7 @@ export default function MidPage()
     const { theme } = useTheme();
 
     const textColor = theme === 'light' ? '#000000' : '#ffffff';
-    const accentColor = theme === 'light' ? '#929191' : '#880e4f';
+    const accentColor = theme === 'light' ? '#595757' : '#880e4f';
 
     return (
        <div className="main-page" >

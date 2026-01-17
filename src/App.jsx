@@ -11,12 +11,16 @@ function App() {
 
   return (   
     <>
-      <Header />
       <Routes>
-        <Route path="/" element={<MidPage />} />
+        <Route path="/" element={
+          <>
+            <Header />
+            <MidPage />
+            <Footer />
+          </>
+        } />
         <Route path="/hobbies" element={<Hobbies />} />
       </Routes> 
-      <Footer />
     </>
   )
 }
