@@ -13,8 +13,7 @@ export default function Contact() {
     return (
 
         <div className="contact">
-            <h2 style={{textAlign:"center"}}> Contact Me </h2>
-            <br />
+            <h2 className="section-heading">Contact Me</h2>
 
             <form onSubmit={handleSubmit}>
 

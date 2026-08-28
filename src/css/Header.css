@@ -12,10 +12,11 @@ header
     padding: 10px;
     padding-right: 0px;
     margin-bottom: 10px;
-    box-shadow: 0 2px 4px #0000001a;
-    background-color: transparent;
-    border-radius: 0 0 10px 10px;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px var(--shadow-color);
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 0 0 14px 14px;
+    backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -33,23 +34,49 @@ header
     display:flex;
     justify-content: flex-start;
     margin-left: 10px;
-    color: var(--text-color);
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .theme-toggle {
-  background: var(--bg-color);
-  border: 1px solid var(--text-color);
-  font-size: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  font-size: 1.3rem;
+  line-height: 1;
   cursor: pointer;
   color: var(--text-color);
-  padding: 5px;
-  border-radius: 5px;
+  padding: 8px 10px;
+  border-radius: 999px;
   transition: all 0.3s ease;
 }
 
 .theme-toggle:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 4px 14px var(--shadow-color);
+  border-color: var(--accent-color);
 }
+
+.hamburger {
+  display: none;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 14px var(--shadow-color);
+}
+
 .sections
 {
     display:flex;
@@ -63,13 +90,11 @@ header
     text-decoration: none;
     padding: 16px 0px;
     box-sizing: content-box;
-    border-bottom: 2px solid  var(--bg-color);
     color: var(--text-color);
     transition: all 0.3s ease;
 }
 .sections a:hover
 {
-    border-bottom: 2px solid var(--accent-color);
     color: var(--accent-color);
     transform: translateY(-2px);
 }
@@ -81,12 +106,14 @@ header
     position: absolute;
     top: 60px;
     right: 10px;
-    background: #0B0829;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
     flex-direction: column;
     gap: 15px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px var(--shadow-color);
   }
 
   .sections.open {

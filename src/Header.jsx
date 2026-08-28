@@ -1,6 +1,8 @@
 import './css/Header.css';
 import { useState } from "react";
 import { useTheme } from './contexts/ThemeContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
 
@@ -19,10 +21,19 @@ export default function Header() {
                   {theme === 'light' ? '🌙' : '☀️'}
                 </button>
 
+                <button
+                    className="hamburger"
+                    onClick={() => setIsOpen((prev) => !prev)}
+                    aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+                    aria-expanded={isOpen}
+                >
+                    <FontAwesomeIcon icon={isOpen ? faXmark : faBars} />
+                </button>
+
                 <div className={`sections ${isOpen ? "open" : ""}`}>
                     <a href="#home" onClick={handleLinkClick}>Home</a>
                     <a href="#about" onClick={handleLinkClick}>About</a>
-                    <a href="#projects" onClick={handleLinkClick}>Projects</a>                    
+                    <a href="#projects" onClick={handleLinkClick}>Projects</a>
                     <a href="#Education" onClick={handleLinkClick}>Education</a>
                     <a href="#experience" onClick={handleLinkClick}>Experience</a>
                     <a href="#contact" onClick={handleLinkClick}>Contact</a>

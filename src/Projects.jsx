@@ -10,9 +10,16 @@ export default function Projects()
 
         <h2 className="section-title">Projects</h2>
         <br/>
-         <div className="projects-section"> 
-           
-            <ProjectsCard                 
+         <div className="projects-section">
+
+            <ProjectsCard
+                title = {"SplitEase - Group Expense-Sharing Backend"}
+                badge = {"Personal Project"}
+                description = {"Built a group expense-sharing backend as a self-directed project to strengthen Spring Boot skills, with JWT-based stateless authentication and a normalised relational schema modelling users, groups and expense splits. Implemented a greedy debt-simplification algorithm to compute the minimum number of payments needed to settle a group's balances. Wrote unit tests (JUnit 5, Mockito) covering split calculation and settlement logic, plus a full MockMvc integration test exercising the API end-to-end. Debugged and resolved Spring Security configuration issues, including authentication entry-point handling for unauthenticated requests."}
+                techstack={["Spring Boot", "Spring Data JPA", "Spring Security", "MySQL/H2", "JWT", "Docker", "JUnit 5", "Mockito"]}
+            />
+
+            <ProjectsCard
                 title = {"Rakshak - A Remote Healthcare Monitoring System"}
                 // image = {profilePic}
                 description = {"Developed and deployed an end-to-end Remote Healthcare Monitoring System for the Indian Army, integrating ECG, SpO2,and Tele-Stethoscope monitoring through a secure cloud-hosted website and mobile app."

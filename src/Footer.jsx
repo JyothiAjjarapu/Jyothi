@@ -21,17 +21,17 @@ export default function Footer() {
                 <div className="social-icons">
                        
                     <a href="https://www.linkedin.com/in/jyothiajjarapu/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faLinkedin} color="white" />
+                        <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                     <a href="https://github.com/JyothiAjjarapu/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGithub} color="white" />
+                        <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </div>    
            
             </div>
            
             <div className="footer-text">
-                © 2025. Ajjarapu Jyothi. Built with ❤️ using React.
+                © {new Date().getFullYear()}. Ajjarapu Jyothi. Built with ❤️ using React.
             </div>
         </>
     )

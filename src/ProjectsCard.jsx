@@ -1,10 +1,11 @@
 import "./css/projects.css";
 
 
-export default function ProjectsCard({title, description, techstack}) 
+export default function ProjectsCard({title, description, techstack, badge})
 {
     return(
         <div className="project-card">
+            {badge && <span className="project-badge">{badge}</span>}
             <h2> {title} </h2>
             {/* <img src= {image} alt="Project-image"  /> */}
             <br></br>

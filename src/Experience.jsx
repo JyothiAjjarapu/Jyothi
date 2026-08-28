@@ -28,8 +28,7 @@ export default function Experience()
     ];
     return(
         <div className="experience">
-            <h2 style={{textAlign:"center"}}> Experience </h2>
-            <br />
+            <h2 className="section-heading">Experience</h2>
             <Timeline experiences={experiences} />
         </div>
     )

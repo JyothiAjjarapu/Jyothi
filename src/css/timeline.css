@@ -1,26 +1,27 @@
 /* Timeline styles */
 
-.timeline 
+.timeline
 {
   position: relative;
   padding-left: 30px;
-  /* border-left: 2px solid rgb(160, 157, 159); */
+  border-left: 2px solid var(--border-color);
 }
 
-.timeline-item 
+.timeline-item
 {
   position: relative;
   margin-bottom: 30px;
 }
 
-.timeline-dot 
+.timeline-dot
 {
   position: absolute;
   left: -30px;
   top: 5px;
   width: 14px;
   height: 14px;
-  background-color: #888;
+  background: var(--accent-gradient);
+  box-shadow: 0 0 0 4px var(--shadow-color);
   border-radius: 50%;
 }
 

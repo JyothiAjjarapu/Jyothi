@@ -2,8 +2,24 @@
 
 .section-title {
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
     margin-left: 25px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 48px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--accent-gradient);
 }
 
 
@@ -28,23 +44,26 @@
 }
 
 .projects-section::-webkit-scrollbar-thumb {
-    background: #888;
+    background: var(--accent-color);
     border-radius: 4px;
+    opacity: 0.6;
 }
 
 .projects-section::-webkit-scrollbar-thumb:hover {
-    background: #aaa;
+    background: var(--hover-color);
 }
 
 
 .project-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
     padding: 15px;
     color: var(--text-color);
-    min-width: 260px;               
+    min-width: 260px;
     max-width: 260px;
-    height: 610px;
+    min-height: 480px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -54,8 +73,23 @@
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-6px);
+    border-color: var(--accent-color);
+    box-shadow: 0 14px 28px var(--shadow-color);
+}
+
+.project-badge {
+    align-self: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color) 14%, transparent);
+    border: 1px solid var(--border-color);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 10px;
 }
 
 /* Image styling */
@@ -81,18 +115,27 @@
 
 
 .project-card .button {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    border: 1px solid var(--accent-color);
-    padding: 5px 10px;
+    background: var(--card-bg);
+    color: var(--secondary-text);
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
     margin: 2px;
-    border-radius: 5px;
-    font-size: 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 500;
     text-align: center;
+    transition: all 0.2s ease;
+}
+
+.project-card:hover .button {
+    color: var(--text-color);
+    border-color: var(--border-color);
 }
 
 .project-card .techstack-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    margin-top: auto;
+    padding-top: 10px;
 }

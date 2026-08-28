@@ -10,15 +10,10 @@ import Skills from "./Skills";
 import About from "./About";
 
 import { useNavigate } from "react-router-dom";
-import { useTheme } from './contexts/ThemeContext';
 
 export default function MidPage() 
 {
     const navigate = useNavigate();
-    const { theme } = useTheme();
-
-    const textColor = theme === 'light' ? '#000000' : '#ffffff';
-    const accentColor = theme === 'light' ? '#595757' : '#880e4f';
 
     return (
        <div className="main-page" >
@@ -28,26 +23,26 @@ export default function MidPage()
 
                     <div className="info">
 
-                        <h2 style={{color: accentColor}}>
-                            Hi, I'm Ajjarapu Jyothi 👋
+                        <h2 style={{color: 'var(--accent-color)'}}>
+                            Hi, I'm Jyothi Ajjarapu 👋
                         </h2>
 
-                        <h1 style={{color: textColor}}>Full Stack Developer</h1>
+                        <h1 style={{color: 'var(--text-color)'}}>Full Stack Developer</h1>
 
-                        <p style = {{color: textColor ,display: 'flex', flexWrap:'wrap'}}> 
-                           front-end focused full stack developer with experience in building web applications using Java, React, SQL, and Docker.
+                        <p style = {{color: 'var(--text-color)' ,display: 'flex', flexWrap:'wrap'}}>
+                           Full stack developer building web applications with Java, Spring Boot, React and SQL — currently deepening my backend and cloud expertise.
                         </p>
 
-                        <button 
-                            className="btn" 
-                            style={{backgroundColor: "transparent", border:"1px solid grey"}}
+                        <button
+                            className="btn"
+                            style={{background: "transparent", color: 'var(--text-color)', border:"1px solid var(--border-color)", boxShadow: "none"}}
                             onClick={() => navigate("/hobbies")}
-                        >  
-                            My Hobbies 
+                        >
+                            My Hobbies
                         </button>
                         {"  "}
                        
-                        <a href="/Resume.pdf" download>
+                        <a href="/Jyothi Ajjarapu Resume.pdf" download>
                             <button className="btn">Download Resume</button>
                         </a>
                        

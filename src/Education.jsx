@@ -21,8 +21,7 @@ const education = [
 
     return(
         <div className="experience">
-            <h2 style={{textAlign:"center"}}> Education </h2>
-            <br />
+            <h2 className="section-heading">Education</h2>
             <Timeline experiences={education} />
         </div>
     )

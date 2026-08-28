@@ -1,0 +1,68 @@
+/* Skills section styles */
+
+.skills-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.skills-group-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--secondary-text);
+}
+
+.skills-group-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px 6px 8px;
+  border-radius: 999px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 13px;
+  font-weight: 500;
+  backdrop-filter: blur(6px);
+  transition: all 0.25s ease;
+}
+
+.skill-chip:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-color);
+  box-shadow: 0 6px 16px var(--shadow-color);
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 11px;
+  flex-shrink: 0;
+  background: color-mix(in srgb, var(--icon-color) 18%, transparent);
+  color: var(--icon-color);
+}

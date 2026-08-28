@@ -2,27 +2,48 @@
 
 /* CSS Variables for theming */
 body {
-  --bg-color: #0B0829;
-  --text-color: #ffffff;
-  --accent-color: #ff5722;
-  --hover-color: #ff5722;
-  --secondary-text: #ccc;
+  --bg-color: #f8fafc;
+  --bg-color-alt: #eef2ff;
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --border-color: rgba(15, 23, 42, 0.08);
+  --text-color: #0f172a;
+  --secondary-text: #475569;
+  --accent-color: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --accent-gradient: linear-gradient(135deg, #6366f1, #8b5cf6);
+  --hover-color: #4f46e5;
+  --on-accent: #ffffff;
+  --shadow-color: rgba(99, 102, 241, 0.18);
 }
 
 body.dark {
-  --bg-color: #121212;
-  --text-color: #ffffff;
-  --accent-color: #880e4f;
-  --hover-color: #880e4f;
-  --secondary-text: #ccc;
+  --bg-color: #0f0f1a;
+  --bg-color-alt: #16162a;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --border-color: rgba(255, 255, 255, 0.09);
+  --text-color: #f1f5f9;
+  --secondary-text: #94a3b8;
+  --accent-color: #818cf8;
+  --accent-secondary: #a78bfa;
+  --accent-gradient: linear-gradient(135deg, #6366f1, #a78bfa);
+  --hover-color: #a5b4fc;
+  --on-accent: #ffffff;
+  --shadow-color: rgba(129, 140, 248, 0.28);
 }
 
 body.light {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --accent-color: #b0b0b0;
-  --hover-color: #b0b0b0;
-  --secondary-text: #666;
+  --bg-color: #f8fafc;
+  --bg-color-alt: #eef2ff;
+  --card-bg: rgba(255, 255, 255, 0.75);
+  --border-color: rgba(15, 23, 42, 0.08);
+  --text-color: #0f172a;
+  --secondary-text: #475569;
+  --accent-color: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --accent-gradient: linear-gradient(135deg, #6366f1, #8b5cf6);
+  --hover-color: #4f46e5;
+  --on-accent: #ffffff;
+  --shadow-color: rgba(99, 102, 241, 0.16);
 }
 
 /* Keyframes for animated gradient */
@@ -34,14 +55,43 @@ body.light {
 
 /* Light theme static gradient background */
 body.light {
-  background: linear-gradient(-45deg, #ccd1d9, #dce1e8, #e1e5e9, #d7dfe8);
+  background: linear-gradient(-45deg, #eef2ff, #f5f3ff, #eff6ff, #f8fafc);
 }
 
 /* Dark theme animated background */
 body.dark {
-  background: linear-gradient(-45deg, #1e1e1e, #2c2c2c, #3a3a3a, #1a1a1a);
+  background: linear-gradient(-45deg, #0f0f1a, #171331, #1b1440, #10101c);
   background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  animation: gradientShift 18s ease infinite;
+}
+
+body {
+  transition: background 0.4s ease, color 0.3s ease;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Shared centered heading treatment for page sections */
+.section-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-color);
+  position: relative;
+  margin: 0 0 28px 0;
+  padding-bottom: 12px;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--accent-gradient);
 }
 
 /* Subtle floating animation for elements */
@@ -57,4 +107,9 @@ body.dark {
 /* Ensure smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--accent-color);
+  color: var(--on-accent);
 }
